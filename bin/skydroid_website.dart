@@ -46,8 +46,7 @@ Future handleRequest(HttpRequest req) async {
       await req.response.close();
     } else if (req.uri.path == '/assets/app.bundle.js') {
       req.response.headers.add('content-type', 'text/javascript');
-      req.response.add(File('html/assets/app.bundle.js')
-          .readAsBytesSync());
+      req.response.add(File('html/assets/app.bundle.js').readAsBytesSync());
       await req.response.close();
     } else if (req.uri.path == '/assets/skydroid.svg') {
       req.response.headers.add('content-type', 'image/svg+xml');
@@ -145,7 +144,8 @@ Future handleRequest(HttpRequest req) async {
     'summary': localized['summary'],
     'name': data['name'],
     'author': data['author'],
-    'description': markdownToHtml(localized['description']),
+    'description':
+        markdownToHtml(data['description'] ?? localized['description'] ?? ''),
     'showScreenshots': screenshots.isNotEmpty,
   });
   //print(rendered);
