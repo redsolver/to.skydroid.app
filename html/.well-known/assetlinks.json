@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "app.skydroid",
+                 "sha256_cert_fingerprints": ["23:A3:60:8A:72:35:C1:B5:C1:AB:29:B3:62:63:CA:97:80:65:8B:C8:E0:1C:89:5F:C3:8B:01:5F:9F:90:1E:57"] }
+  }]

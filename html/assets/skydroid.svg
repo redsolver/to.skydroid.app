@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 155 60" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>fil_get</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title>fil_get</title>
+ <path d="M0 0h155v60H0z" fill="none"/>
+ <rect x="10" y="10" width="135" height="40" rx="5" ry="5"/>
+ <path d="M140 10.8a4.2 4.2 0 0 1 4.2 4.2v30a4.2 4.2 0 0 1-4.2 4.2H15a4.2 4.2 0 0 1-4.2-4.2V15a4.2 4.2 0 0 1 4.2-4.2h125m0-.8H15a5 5 0 0 0-5 5v30a5 5 0 0 0 5 5h125a5 5 0 0 0 5-5V15a5 5 0 0 0-5-5z" fill="#a6a6a6"/>
+ <g transform="matrix(.067179 0 0 .067179 12.903 12.802)" fill="#57b560">
+  <path d="m32 32h192a192 192 0 0 1-192 192z"/>
+  <path d="m32 288h192v192a192 192 0 0 1-192-192v-192z"/>
+  <path d="m288 288h192v192h-192z"/>
+  <path d="m288 32a192 192 0 0 1 192 192h-192z"/>
+ </g>
+ <text x="55.838173" y="24.968332" fill="#000000" font-family="sans-serif" font-size="14.065px" letter-spacing="0px" stroke-width="1.1721" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="55.838173" y="24.968332" fill="#ffffff" font-family="FiraSans" font-size="14.065px" stroke-width="1.1721">Download on</tspan></text>
+ <text x="63.418747" y="44.038048" fill="#000000" font-family="sans-serif" font-size="19.125px" letter-spacing="0px" stroke-width="1.5938" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="63.418747" y="44.038048" fill="#ffffff" font-family="FiraSans" font-size="19.125px" stroke-width="1.5938">SkyDroid</tspan></text>
+</svg>

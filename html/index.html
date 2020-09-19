@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="{{ summary }}">
+    <!-- <meta name="keywords" content=""> -->
+    <meta name="theme-color" content="#efeeff">
+    <meta name="msapplication-navbutton-color" content="#efeeff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#efeeff">
+    <meta property="og:image" content="{{ icon }}" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Heebo:900" rel="stylesheet"> -->
+    <title>{{ name }} | {{ summary }}</title>
+    <meta property="og:title" content="{{ name }}" />
+    <meta name="author" content="{{ author }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="{{ summary }}" />
+    <meta property="og:description" content="{{ summary }}" />
+    <meta property="og:site_name" content="{{ name }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#fff">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#efeeff" />
+    <link href="/assets/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header class="app__header container">
+            <div class="app__logo-wrapper"> <img class="app__logo" src="{{ icon }}" alt="{{ name }} Icon"></div>
+            <div class="app__infos">
+                <h1 class="app__name">{{ name }}</h1>
+                <p class="app__description">{{ summary }}</p>
+                <div class="app__buttons app__buttons--desktop"> <a href="https://get.skydroid.app"
+                        class="app__button-skydroid" target="_blank"><img style="width: 256px;"
+                            src="/assets/skydroid.svg" alt="Get on SkyDroid"></a></div>
+            </div>
+        </header>
+        <div class="app__buttons app__buttons--mobile container"> <a href="https://get.skydroid.app"
+                class="app__button-skydroid" target="_blank"><img style="width: 256px;" src="/assets/skydroid.svg"
+                    alt="Get on SkyDroid"></a></div>
+
+        {{# showScreenshots }}
+        <section class="app__screenshots app__section">
+            <div class="container">
+                <h2 class="app__section-title">Screenshots</h2>
+            </div>
+            <div class="app__screenshots-wrapper container-desktop" style="overflow-y: auto;">
+                <div class="app__screenshots-list"
+                    style="grid-template-columns:{{# screenshots }} 200px{{/ screenshots }}; padding: 30px 0;">
+
+                    {{# screenshots }}
+                    <a href="{{ src }}" class="lightbox"> <img src="{{ src }}" class="app__screenshot"> </a>
+                    {{/ screenshots }}
+
+                </div>
+            </div>
+        </section>
+
+        {{/ showScreenshots }}
+
+        <section class="app__fulldescription app__section container">
+            <h2 class="app__section-title">Description</h2>
+            <div class="app__fulldescription-content">
+                {{{ description }}}
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <p class="footer__love"><a href="https://github.com/sandoche/Mobile-app-landingpage-template"
+                        target="_blank">Used Template</a>
+                </p>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="https://skydroid.app" target="_blank">About SkyDroid</a>
+                    </li>
+                    <li class="footer__link"><a href="https://skydroid.dev" target="_blank">Publish your own app</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/app.bundle.js"></script>
+</body>
+
+</html>
